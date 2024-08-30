@@ -15,8 +15,10 @@ class ItemsViewModel : ViewModel() {
             onRemove = ::removeItem
         )
 
-        items.add(item)
-        itemsLiveData.value = items
+        if (!items.contains(item)) {
+            items.add(item)
+            itemsLiveData.value = items
+        }
     }
 
     private fun removeItem(item: ItemModel) {
