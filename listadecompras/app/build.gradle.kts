@@ -65,4 +65,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.appcompat)
+
+    implementation("androidx.activity:activity-ktx:1.7.0")
 }
