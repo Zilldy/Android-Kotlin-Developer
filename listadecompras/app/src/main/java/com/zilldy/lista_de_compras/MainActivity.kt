@@ -7,6 +7,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
+import com.zilldy.lista_de_compras.adapter.ItemsAdapter
+import com.zilldy.lista_de_compras.view_model.ItemsViewModel
 
 class MainActivity : AppCompatActivity() {
 

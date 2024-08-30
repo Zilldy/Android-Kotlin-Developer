@@ -1,4 +1,4 @@
-package com.zilldy.lista_de_compras
+package com.zilldy.lista_de_compras.model
 
 data class ItemModel(
     val id: Int,

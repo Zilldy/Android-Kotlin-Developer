@@ -1,4 +1,4 @@
-package com.zilldy.lista_de_compras
+package com.zilldy.lista_de_compras.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.zilldy.lista_de_compras.R
+import com.zilldy.lista_de_compras.model.ItemModel
 
 class ItemsAdapter : RecyclerView.Adapter<ItemsAdapter.ItemViewHolder>() {
 

@@ -1,7 +1,8 @@
-package com.zilldy.lista_de_compras
+package com.zilldy.lista_de_compras.view_model
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.zilldy.lista_de_compras.model.ItemModel
 
 class ItemsViewModel : ViewModel() {
 
