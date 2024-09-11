@@ -1,10 +1,11 @@
 package com.zilldy.lista_de_compras.view_model
 
+import android.app.Application
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.zilldy.lista_de_compras.model.ItemModel
 
-class ItemsViewModel : ViewModel() {
+class ItemsViewModel(application: Application) : ViewModel() {
 
     private var items = mutableListOf<ItemModel>()
     val itemsLiveData = MutableLiveData<List<ItemModel>>()
