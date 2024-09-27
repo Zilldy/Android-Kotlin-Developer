@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import zilldy.com.github.cryptomonitor.state.ScreenState
 import zilldy.com.github.cryptomonitor.viewmodel.CryptoViewModel
 import zilldy.com.github.cryptomonitor.viewmodel.CryptoViewModelFactory
@@ -25,6 +26,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Encontra a barra de ferramentas pelo seu ID e a define como a barra de ação para esta activity.
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        // Define o título da barra de ação.
+        supportActionBar?.title = "Lista de Compras"
+
 
         viewModel.tickerLiveData.observe(this) { state: ScreenState ->
             when (state) {
